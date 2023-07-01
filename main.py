@@ -54,10 +54,10 @@ if __name__ == "__main__":
     price = ETHUSD.get_start_point()
     analysis = ETHUSD.analysis().summary
 
-    element = str(analysis['RECOMMENDATION'])
-    if element.upper() in ["BUY", "STRONG_BUY"]:
+    element = str(analysis['RECOMMENDATION']).upper()
+    if element in ["BUY", "STRONG_BUY"]:
         element = "BUY"
-    if element.upper() in ["SELL", "STRONG_SELL"]:
+    if element in ["SELL", "STRONG_SELL"]:
         element = "SELL"
 
     procent = round(analysis[element] * 100 / sum([analysis['BUY'], analysis['SELL'], analysis['NEUTRAL']]))
