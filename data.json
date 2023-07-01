@@ -1,0 +1,11 @@
+{
+    "procent": "35%",
+    "recommendation": "buy",
+    "price": 1916.7,
+    "analysis_info": {
+        "symbol": "ETHUSD",
+        "screener": "crypto",
+        "exchange": "BITSTAMP",
+        "timestap": "15m"
+    }
+}
